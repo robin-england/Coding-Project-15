@@ -1,25 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+// U63166005
+// Challenge 15
 
-function App() {
+import React from 'react'
+import PersonalInfo from './PersonalInfo.js'  // imports Profile from component
+import './App.css'    // imports style
+  
+function App() {  // Runs personalinfo
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      <PersonalInfo/>
+  )
 }
 
-export default App;
+export default App
