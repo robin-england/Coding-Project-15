@@ -5,6 +5,7 @@ import React from 'react'
 import PersonalInfo from './PersonalInfo.js'  // imports Profile from component
 import SkillList from './SkillList.js'  // imports Skills from component
 import WorkExp from './WorkExp.js'  // imports Skills from component
+import Education from './Education.js'  // imports Profile from component
 import './App.css'    // imports style
 
 const skills =[
@@ -64,6 +65,7 @@ function App() {
       <SkillList skills={skills}/>
       Work Experience:
       <WorkExp experiences={experiences}/>
+      <Education/>
     </div>
   )
 }
