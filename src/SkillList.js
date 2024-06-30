@@ -6,7 +6,7 @@ import AddSkill from './AddSkill.js'
 export default function SkillList({ skills }) {
   return (
     <div className="skill-list">
-      <h3>Skills:</h3>
+      <h3>Skills</h3>
       {skills.map(skill => (
         <AddSkill
           name={skill.name}

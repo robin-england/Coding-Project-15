@@ -4,15 +4,17 @@
 import React from 'react'
 import PersonalInfo from './PersonalInfo.js'  // imports Profile from component
 import SkillList from './SkillList.js'  // imports Skills from component
-import WorkExp from './WorkExp.js'  // imports Skills from component
-import Education from './Education.js'  // imports Profile from component
+import WorkExp from './WorkExp.js'  // imports Work experience from component
+import Education from './Education.js'  // imports Education from component
 import './App.css'    // imports style
+
+// Can edit the following information as it updates:
 
 let name = "Robin England"
 let bio = " I grew up in Germany and have been working in banking for five years, with a specializiation in process improvement. In addition to certifications in Project Management and Six Sigma, I am currently pursuing a bachelor's degree at the University of South Florida in Business Analytics."
 let contactInfo = "Email Adress: englandr@usf.edu"
 
-const education = [
+const education = [ // Defines Education
   {
     institution: "Saint Petersburg College",
     degree: "A.A. (Business Concentration)",
@@ -26,7 +28,7 @@ const education = [
   }
 ]
 
-const skills = [
+const skills = [  // Defines Skills
   {
     name: "Financial Services",
     proficiencyLevel: "Expert",
@@ -43,7 +45,7 @@ const skills = [
   }
 ]
 
-const experiences = [
+const experiences = [ // Defines work experience
   {
     name: "Process Design Analyst",
     company: "Bank of America",
@@ -57,7 +59,9 @@ const experiences = [
   },
 ]
 
-function App() {
+// Creates html elements based on components:
+
+function App() {  
   return (
     <div className="app">
       <PersonalInfo name={name} bio={bio} contactInfo={contactInfo} />
@@ -68,4 +72,4 @@ function App() {
   )
 }
 
-export default App
+export default App  // Runs code

@@ -1,19 +1,19 @@
 .app {    /* format for entire app function */
   width: 600px;
   height: auto;
-  font-size: 20px;
-  color: darkblue;
-  margin: 25px;
-  border: solid, 3px, darkblue;
+  font-size: 18px;
+  border: solid, 2px;
   margin: auto;
   align-self: center;
+  background: rgba(216, 245, 254, 0.3)
 }
 
-h3{
-  text-decoration: underline;
+h3{     /* formats the h3 header for each input */
+  font-family: serif;
+  font-size: 24px;
   text-align: center;
 }
 
-div{
+div{    /* Adds margin formatting for each div element */
   margin: 5px;
 }

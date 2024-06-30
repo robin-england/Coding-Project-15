@@ -6,7 +6,7 @@ import AddWorkExp from './AddWorkExp.js'
 export default function WorkExp({ experiences }) {
   return (
     <div className="work-exp">
-      <h3>Work Experience:</h3>
+      <h3>Work Experience</h3>
       {experiences.map(experience => (
         <AddWorkExp
           name={experience.name}

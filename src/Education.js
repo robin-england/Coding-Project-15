@@ -5,7 +5,7 @@ import AddEducation from "./AddEducation.js"
 export default function EducationList({ education }) {
     return (
         <div className="education">
-            <h3>Education:</h3>
+            <h3>Education</h3>
             {education.map(({ institution, degree, years }) => (
                 <AddEducation
                     institution={institution}
