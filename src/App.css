@@ -1,4 +1,4 @@
-.personal-info {
+.app {    /* format for entire app function */
   width: 300px;
   height: auto;
   font-size: 20px;
@@ -7,4 +7,8 @@
   margin: 25px;
   border-radius: 25%;
   border: solid, 3px, darkblue;
+}
+
+.skill-list{  /* format for only the list of skills */
+  margin-top: 50px;
 }
