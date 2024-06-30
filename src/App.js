@@ -8,64 +8,62 @@ import WorkExp from './WorkExp.js'  // imports Skills from component
 import Education from './Education.js'  // imports Profile from component
 import './App.css'    // imports style
 
-const skills =[
+let name = "Robin England"
+let bio = " I grew up in Germany and have been working in banking for five years, with a specializiation in process improvement. In addition to certifications in Project Management and Six Sigma, I am currently pursuing a bachelor's degree at the University of South Florida in Business Analytics."
+let contactInfo = "Email Adress: englandr@usf.edu"
 
+const education = [
   {
-  id: 1,
-  name: "Banking",
-  proficiencyLevel:"Expert",
+    institution: "Saint Petersburg College",
+    degree: "A.A. (Business Concentration)",
+    years: "Graduated 2019"
   },
 
   {
-  id: 2,
-  name: "Data Analytics",
-  proficiencyLevel:"Advanced",
-  },
-
-  {
-  id: 3,
-  name: "Tableau",
-  proficiencyLevel:"Intermediate",
+    institution: "University of South Florida",
+    degree: "B.S. in Business Analytics and Information Systems",
+    years: "Projected Graduation: 2025"
   }
-
 ]
 
-const experiences =[
-
-// jobTitle, company, duration
-
+const skills = [
   {
-  id: 1,
-  name: "Title 1",
-  company:"Company 1",
-  duration: "2 years",
+    name: "Financial Services",
+    proficiencyLevel: "Expert",
   },
 
   {
-    id: 2,
-    name: "Title 2",
-    company:"Company 2",
-    duration: "3 years",
+    name: "Data Analytics",
+    proficiencyLevel: "Advanced",
   },
 
   {
-    id: 3,
-    name: "Title 3",
-    company:"Company 3",
-    duration: "4 years",
+    name: "Tableau",
+    proficiencyLevel: "Intermediate",
   }
+]
 
+const experiences = [
+  {
+    name: "Process Design Analyst",
+    company: "Bank of America",
+    duration: "2022-Present",
+  },
+
+  {
+    name: "Team Lead",
+    company: "FIS Merchant Services",
+    duration: "2019-2022",
+  },
 ]
 
 function App() {
   return (
     <div className="app">
-      <PersonalInfo/>
-      Skills: 
-      <SkillList skills={skills}/>
-      Work Experience:
-      <WorkExp experiences={experiences}/>
-      <Education/>
+      <PersonalInfo name={name} bio={bio} contactInfo={contactInfo} />
+      <SkillList skills={skills} />
+      <WorkExp experiences={experiences} />
+      <Education education={education} />
     </div>
   )
 }

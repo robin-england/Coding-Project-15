@@ -1,14 +1,19 @@
 .app {    /* format for entire app function */
-  width: auto;
+  width: 600px;
   height: auto;
   font-size: 20px;
-  text-align: center;
   color: darkblue;
   margin: 25px;
-  border-radius: 25%;
   border: solid, 3px, darkblue;
+  margin: auto;
+  align-self: center;
 }
 
-.skill-list{  /* format for only the list of skills */
-  margin-top: 50px;
+h3{
+  text-decoration: underline;
+  text-align: center;
+}
+
+div{
+  margin: 5px;
 }

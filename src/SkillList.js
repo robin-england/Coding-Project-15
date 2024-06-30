@@ -3,16 +3,18 @@
 
 import AddSkill from './AddSkill.js'
 
-export default function SkillList({skills}){
+export default function SkillList({ skills }) {
   return (
     <div className="skill-list">
-      {skills.map(skill =>(
+      <h3>Skills:</h3>
+      {skills.map(skill => (
         <AddSkill
-          key={skill.id}
           name={skill.name}
           proficiencyLevel={skill.proficiencyLevel}
-      />
-    ))}    
+        />
+      ))}
+      <br></br>
     </div>
+
   )
 }

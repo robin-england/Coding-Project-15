@@ -3,17 +3,17 @@
 
 import AddWorkExp from './AddWorkExp.js'
 
-export default function WorkExp({experiences}){
+export default function WorkExp({ experiences }) {
   return (
     <div className="work-exp">
-      {experiences.map(experience =>(
+      <h3>Work Experience:</h3>
+      {experiences.map(experience => (
         <AddWorkExp
-          key={experience.id}
           name={experience.name}
           company={experience.company}
           duration={experience.duration}
-      />
-    ))}    
+        />
+      ))}
     </div>
   )
 }
